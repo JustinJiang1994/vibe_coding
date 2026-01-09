@@ -1,0 +1,68 @@
+<!--
+Filename: /Users/justin/code/vibe_coding/2_井字棋/index.html
+Path: /Users/justin/code/vibe_coding/2_井字棋
+Created Date: Friday, January 9th 2026, 4:19:45 pm
+Author: Justin Jiang
+
+Copyright (c) 2026 Justin Jinag Inc.
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>井字棋游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>井字棋游戏</h1>
+        
+        <div class="game-info">
+            <div class="current-player">
+                <span>当前玩家: </span>
+                <span id="player-indicator">X</span>
+            </div>
+            <div class="game-status" id="game-status"></div>
+        </div>
+
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div class="controls">
+            <button id="reset-btn" class="reset-btn">重新开始</button>
+        </div>
+
+        <div class="score-board">
+            <div class="score-item">
+                <span class="score-label">X 得分:</span>
+                <span id="score-x" class="score-value">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">O 得分:</span>
+                <span id="score-o" class="score-value">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">平局:</span>
+                <span id="score-draw" class="score-value">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
