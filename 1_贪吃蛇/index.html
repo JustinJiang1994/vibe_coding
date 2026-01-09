@@ -1,0 +1,65 @@
+<!--
+Filename: /Users/justin/code/vibe_coding/1_贪吃蛇/index.html
+Path: /Users/justin/code/vibe_coding/1_贪吃蛇
+Created Date: Friday, January 9th 2026, 3:30:27 pm
+Author: Justin Jiang
+
+Copyright (c) 2026 Justin Jinag Inc.
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>🐍 贪吃蛇游戏</h1>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="label">得分:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">最高分:</span>
+                    <span id="high-score">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div id="gameOver" class="game-over hidden">
+                <h2>游戏结束!</h2>
+                <p>你的得分: <span id="finalScore">0</span></p>
+                <button id="restartBtn">重新开始</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="control-info">
+                <p>使用方向键控制蛇的移动</p>
+                <p>按空格键暂停/继续</p>
+            </div>
+            <div class="mobile-controls">
+                <button class="control-btn" id="btnUp">↑</button>
+                <div class="control-row">
+                    <button class="control-btn" id="btnLeft">←</button>
+                    <button class="control-btn" id="btnDown">↓</button>
+                    <button class="control-btn" id="btnRight">→</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
+
